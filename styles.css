@@ -1,0 +1,45 @@
+#sidebar {
+    width: 128px;
+    height: 100%;
+    float: left;
+    position: relative;
+    background-color: #ffffff;
+}
+
+#sidebar:after {
+    content: '';
+    position: absolute;
+    right: 0px; 
+    top: 0;
+    height: 100%;
+    width: 2px; 
+    background-color: black; 
+    z-index: 10; 
+}
+
+#grid {
+    margin-top: 64px; 
+    margin-left: 192px; 
+    display: grid;
+}
+
+.tile {
+    width: 64px; 
+    height: 64px; 
+    background-size: 64px 64px; 
+    cursor: pointer;
+    position: relative; 
+}
+
+.dot {
+    width: 4px;
+    height: 4px;
+    background-color: #909090;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.top-left { top: -2; left: -2; }
+.top-right { top: -2; right: -2; }
+.bottom-left { bottom: -2; left: -2; }
+.bottom-right { bottom: -2; right: -2; }
